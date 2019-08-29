@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box;
+}
+body, html{
+    margin:0;
+    font-family: montserrat;
+}
+a{
+    color:gray;
+    border-bottom: 1px solid #4885ed;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+b,h1{
+    color: #4885ed;
+}
+
+.main-section{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+}
+.beside-each-other{
+    width:49%;
+    display: inline-block;
+}
+.intro{
+    text-align:center;
+
+}
+.image-holder{
+    margin: 0 auto;
+    padding: 1%;
+    width:17%;
+}
