@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="stylesheet" href="./Amanam.css">
-    <title>Firstname</title>
+    <title>Amanam</title>
 </head>
 <body>
     <main>
@@ -83,6 +83,30 @@
                
                        
     </main>
+    <footer>
+        <div class="container">
+                <form method="post">
+                        <input type="text" placeholder="Your name" id="name" name="name" minlength="4" class="txt-input" required>
+                        <input type="email" placeholder="Your email" name="email" class="txt-input" id="email" required>
+                        <input type="text" placeholder="title" name="title" id="title" class="txt-input" required>
+                        <textarea placeholder="type your message" name="message" id="message" required minlength="10"></textarea>
+                        <button type="submit" class="btn" id="submitBtn">Submit</button>
+                    </form>
+        </div>
+        
+    </footer>
+    <script>
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click', validate);
+        
+        function validate(){
+            let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            
+            if(regex.test(email)){
+            return;
+            }
+        }
+    </script>
     
 </body>
 </html>
