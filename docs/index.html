@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="./Amanam.css">
+    <title>Amanam</title>
+</head>
+<body>
+    <main>
+               <div class="image-holder">
+                <img src="https://res.cloudinary.com/cloud-y/image/upload/v1566514767/DSC_0921-01_1_db7yjw.jpg" placeholder
+                ="user-photo">                   
+                </div>  
+                    <div class="intro personal-details">           
+                            <h1>Amanam Israel</h1>
+                            <span>Frontend Engineer, user interface and experience designer</span><br>
+                            <span>uyo, Nigeria</span><br>
+                            <span>+234 9078957519</span><br>
+                            <span>amanam42@hotmail.com</span><br>
+                            <span><a href="https://github.com/IsraelAmanam">github.com/IsraelAmanam</a></span>                      
+                    </div>
+                <hr></hr>
+                <div class="main-section">
+                        <div class="beside-each-other">
+                                <ul>
+                                        <b>Education</b>
+                                        <li>University of uyo, Akwa Ibom — B.Eng</li>
+                                        <span>November 2018 - Till date</span><br>
+                                        <span>Computer Engineering bsc. Degree.</span>
+                                    </ul>
+                                    <ul>
+                                        <li>St Mary’s Science college, Akwa ibom — SSCE</li>
+                                        <span>September 2014 - July 2017</span><br>
+                                        <span>senior secondary education.</span>
+                                    </ul>
+                                    <ul>
+                                        <li>Pluralsight</li>
+                                        <span>July 2019 — Till date</span><br>
+                                        <span>Html/css, Javascript, Angular</span>
+                                    </ul>
+                                    <ul>
+                                            <b>Projects</b>
+                                            <li>Private Organisation chat bot — December 2018</li>
+                                            <span>Listens to questions from users and replies from an array of answers.</span>
+                                            <br>
+                                            <li>Weather Pwa — June 2019</li>
+                                            <span>Built on native geolocation api , uses a public weather api(open weather map).</span>
+                                        </ul>
+                                        <ul>
+                                                <b>Organisations</b>
+                                                <li>Developer student clubs  — 03/2019 till present</li>
+                                                <span>Figma Africa  — 03/2019 till present</span>
+                                            </ul>
+                        </div>
+                        <div class="beside-each-other">
+                                <ul>
+                                        <b>Skills</b>
+                                        <li>Html</li>
+                                        <li>Css</li>
+                                        <li>Javascript</li>
+                                        <li>Angular</li>
+                                        <li>Wordpress</li>
+                                        <li>Figma</li>
+                                        <li>Adobe illustrator</li>
+                                        <li>Adobe Xd</li>
+                                        
+                                    </ul>
+                                    <ul>
+                                            <b>Awards</b>
+                                            <li>Full stack development certification</li>
+                                            <span>The Garage, uyo</span>
+                                    </ul>
+                                    <ul>
+                                            <b>Languages</b>
+                                            <li>Proficient in English language</li>
+                                            
+                                    </ul>
+                        </div>
+                </div>
+               
+               
+                       
+    </main>
+    <footer>
+        <div class="container">
+                <form method="post">
+                        <input type="text" placeholder="Your name" id="name" name="name" minlength="4" class="txt-input" required>
+                        <input type="email" placeholder="Your email" name="email" class="txt-input" id="email" required>
+                        <input type="text" placeholder="title" name="title" id="title" class="txt-input" required>
+                        <textarea placeholder="type your message" name="message" id="message" required minlength="10"></textarea>
+                        <button type="submit" class="btn" id="submitBtn">Submit</button>
+                    </form>
+        </div>
+        
+    </footer>
+    <script>
+        let submitBtn = document.getElementById("submitBtn");
+        submitBtn.addEventListener('click', validate);
+        
+        function validate(){
+            let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            
+            if(regex.test(email)){
+            return;
+            }
+        }
+    </script>
+    
+</body>
+</html>
